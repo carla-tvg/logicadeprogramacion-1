@@ -1,4 +1,4 @@
-function solicitonumero() {
+function solicitoNumero() {
     var numero1 = parseFloat(prompt("Número 1: "));
     var numero2 = parseFloat(prompt("Número 2: "));
     var numero3 = parseFloat(prompt("Número 3: "));
@@ -17,7 +17,7 @@ function solicitonumero() {
         // SI todos los números son iguales
         mensaje = "Los números son iguales.";
     } else {
-        // ordena los números de menor a mayor
+        // ordena los números de meno a mayor
         numeros.sort((a, b) => a - b);
 
         // asigna los valores a menor, centro y mayor
