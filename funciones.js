@@ -9,16 +9,25 @@ function solicitonumero() {
 
     const numeros = [numero1, numero2, numero3]; // guardo los numeros en un array
 
+    // variables para los números mayor, menor y del centro
+    let mayor, menor, centro;
     let mensaje;
 
     if (numero1 === numero2 && numero2 === numero3) {
+        // SI todos los números son iguales
         mensaje = "Los números son iguales.";
     } else {
-        // ordenar los números de menor a mayor
+        // ordena los números de menor a mayor
         numeros.sort((a, b) => a - b);
-        mensaje = "Los números ordenados son: " + numeros.join(", ");
+
+        // asigna los valores a menor, centro y mayor
+        menor = numeros[0];
+        centro = numeros[1];
+        mayor = numeros[2];
+
+        // prepara el mensaje para mostrar los resultados
+        mensaje = `El número menor es: ${menor}, el número del centro es: ${centro}, y el número mayor es: ${mayor}.`;
     }
 
-    //muestro resultado con id="resultado"
     document.getElementById("resultado").textContent = mensaje;
 }
