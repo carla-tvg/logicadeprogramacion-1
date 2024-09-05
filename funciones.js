@@ -1,4 +1,4 @@
-function solicitoNumero() {
+function solicitonumero() {
     var numero1 = parseFloat(prompt("Número 1: "));
     var numero2 = parseFloat(prompt("Número 2: "));
     var numero3 = parseFloat(prompt("Número 3: "));
